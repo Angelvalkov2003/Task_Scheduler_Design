@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="bg" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Scheduler</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/css/tabler.min.css"
+    />
+  </head>
+  <body>
+    <header class="navbar navbar-expand-md d-print-none">
+      <div class="container py-2">
+        <a class="navbar-brand" href="./index.html">Task Scheduler</a>
+        <div class="d-flex align-items-center">
+          <div class="dropdown">
+            <a href="#" class="nav-link" data-bs-toggle="dropdown">
+              <span class="avatar">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="icon avatar-icon"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                  <circle cx="12" cy="7" r="4" />
+                  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                </svg>
+              </span>
+            </a>
+            <div class="dropdown-menu">
+              <span class="dropdown-header">Hi, Angel.Valkov</span>
+              <a href="./settings.html" class="dropdown-item">Settings</a>
+              <div class="dropdown-divider"></div>
+              <a href="#" class="dropdown-item">Logout</a>
+            </div>
+          </div>
+
+          <!-- Dark Mode Toggle -->
+          <span class="avatar ms-3" id="theme-toggle" style="cursor: pointer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.75"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon icon-tabler icons-tabler-outline icon-tabler-moon"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <div class="container mt-5">
+      <h2 class="text-center">Disney Standart Excel AutoExport</h2>
+
+        <div class="page-wrapper">
+            <div class="page-body">
+              <div class="datagrid">
+                <div class="datagrid-item">
+                  <div class="datagrid-title">id</div>
+                  <div class="datagrid-content">3123</div>
+                </div>
+                <div class="datagrid-item">
+                  <div class="datagrid-title">Type</div>
+                  <div class="datagrid-content">Decipher Auto Export</div>
+                </div>
+                <div class="datagrid-item">
+                  <div class="datagrid-title">Created by</div>
+                  <div class="datagrid-content">Angel Valkov</div>
+                </div>
+                <div class="datagrid-item">
+                  <div class="datagrid-title">Status</div>
+                  <span class="status status-green"> Active </span>
+                </div>
+                <div class="datagrid-item">
+                  <div class="datagrid-title">Start date</div>
+                  <div class="datagrid-content">12.03.2025</div>
+                </div>
+                <div class="datagrid-item">
+                  <div class="datagrid-title">End date</div>
+                  <div class="datagrid-content">20.03.2025</div>
+                </div>
+                <div class="datagrid-item">
+                  <div class="datagrid-title">Repeat</div>
+                  <div class="datagrid-content">Every day 9:00am (EST)</div>
+                </div>
+                <div class="datagrid-item">
+                  <div class="datagrid-title">Team</div>
+                  <div class="datagrid-content">Kantar</div>
+                </div>
+                <div class="datagrid-item">
+                  <div class="datagrid-title">Format</div>
+                  <div class="datagrid-content">Excel</div>
+                </div>
+                <div class="datagrid-item">
+                  <div class="datagrid-title">Layout</div>
+                  <div class="datagrid-content">Standart</div>
+                </div>
+                <div class="datagrid-item">
+                  <div class="datagrid-title">Conditions</div>
+                  <div class="datagrid-content">Qualified respondents</div>
+                </div>
+                <div class="datagrid-item">
+                  <div class="datagrid-title">Participants</div>
+                  <div class="datagrid-content">JohnJones@gmail.com, DanaWhite@kantar.com, FakerLol@kantar.com, BruleLee-Bor@borsolutions.com, Eminem@rapnation.us</div>
+                </div>
+                <div class="datagrid-item">
+                  <div class="datagrid-title">Decipher path</div>
+                  <div class="datagrid-content">https://surveys.lifepointspanel.com/survey/bor/v3/EMEA/91232131</div>
+                </div>
+              </div>
+
+              
+
+            </div>
+
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-end align-items-center gap-3 mb-3">
+          <!-- Is Active Switch -->
+          <div class="d-flex flex-column text-center">
+            <div class="form-label">Is Active</div>
+            <label class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" />
+            </label>
+          </div>
+        
+          <!-- Buttons -->
+          <div class="d-flex flex-wrap gap-2">
+            <a href="#" class="btn btn-primary">Force the task</a>
+            <a href="#" class="btn btn-primary">Edit the task</a>
+            <a href="#" class="btn btn-danger">Delete the task</a>
+          </div>
+        </div>
+        
+        
+        
+        
+        
+
+        </div>
+        
+      
+      
+    
+      
+        
+      </div> <!--card body-->
+    </div><!--card-->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/js/tabler.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

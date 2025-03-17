@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@tabler/core": "^1.1.1"
+  },
+  "devDependencies": {
+    "prettier": "3.5.3"
+  }
+}
